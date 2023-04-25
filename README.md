@@ -358,6 +358,55 @@ Clase - 17
 
 Por qué usar Prefabs?
 
+El uso de prefabs en nuestro proyecto y desarrollo, nos facilitará el proceso de este. Siendo capaces de trabajar desde diferentes ramas haciendo uso de Git, para un desarrollo más efectivo y práctico. 
+
+Usando Prefabs, nos será de mucha utilidad, cuando queremos generar elementos dentro de nuestro juego, que sean similares, sin necesidad de hacerlo uno por uno. Le hacemos los cambio al elemento raíz y los otros tomarán los mismos detalles. Si ya queremos hacer un cambio en especifico, simplemente hacemos uso de un elemento en especial que le queramos hacer este mismo cambio.
+
+No sería buena practica, hacer un elemento y este mismo copiarlo y pegarlo. Este sería el uso que le damos al Prefabs, facilitarnos este trabajo.
 
 
 Clase - 18
+
+Vistazo al 2D - Sprites
+
+Cuando manejamos un 2D, es necesario si importamos el archivo desde un programa ajeno, es primordial hacerlo con estilo PNG, para que se vea el personaje y no una imagen con fondo. 
+
+Cuando usamos 2D en unity tenemos la opción de ver la cámara explicitamente en un solo plano
+
+Para no estar configurando cada GameObject como un Sprite para usarlo en 2D, podemos configurar desde el inicio el editor, para proyectos 2D.
+
+Si ya creamos el proyecto en un editor 3D, podemos facilmente cambiar la configuración desde =
+	Settings > Project Settings > Editor > Default Behavior Mode > 2D
+
+Cuando ubicamos nuestro sprite en escena, debemos tener en cuenta las posiciones de cada instancia. Que una esté por delante o detrás de otra. Para eso usamos el 'Order in Layer', mayor sea el numero, mas propiedad tendrá de suporponerse sobre otros.
+
+También podemos hacer uso de 'Sorting in Layer', para darle una palabra clave a cada elemento y así tener un area de trabajo más comoda y optimizada
+
+En unity también podemos editar sprites, en caso de que nuestro png, venga una imagen por partes. Este paquete debemos descargarlo, en caso de que la versión del editor no la tenga
+
+Sorting Group -> Nos sirve para decir a nuestro elemento hecho con varias partes se identifique como uno solo.
+
+
+
+Clase -19
+
+¿Cómo pedirle a un objeto que obedezca las leyes de la física?
+
+Con Componentes
+
+
+Rigidbodie 	> Simula física mediante el transform
+Collider	> Cómo colisiona con su entorno
+
+Jerarquía y Rigidbodies 
+
+	Los colliders que son hijos de un Rigidbody están 'sujetos' a su padre.
+
+Rigidbody kinemático
+
+	+ Pueden afectar a otros bodies
+	+ Otros bodies no le afectan a él
+	+ La simulación no afecta a su transform
+
+
+

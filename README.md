@@ -395,6 +395,15 @@ Clase -19
 Con Componentes
 
 
+Un joint es una articulación, une 3 rigidbodies. Simulación física, que puede romperse
+
+"Fixed Joint" = Es como pegamento, 
+"Spring Joint" = Articulación de resorte
+Hinge + Spring = Efecto trampolín o bisagra de va y ven
+Hinge + Motor = Efecto de molino de viento, gira sobre un eje según una fuerza
+
+Cuando agregamos un joint a un GameObject, automaticamente agrega el rigidbody, ya que sin este no es posible su uso
+
 Rigidbodie 	> Simula física mediante el transform
 Collider	> Cómo colisiona con su entorno
 
@@ -407,6 +416,13 @@ Rigidbody kinemático
 	+ Pueden afectar a otros bodies
 	+ Otros bodies no le afectan a él
 	+ La simulación no afecta a su transform
+
+
+Clase - 20
+
+Joints - Clavos, resortes, bisagras y motores.
+
+
 
 
 
